@@ -43,6 +43,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { HighlightDirective } from './shared/highlight.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 
 @NgModule({
@@ -92,7 +93,7 @@ import { HighlightDirective } from './shared/highlight.directive';
     MatSortModule,
     MatPaginatorModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
